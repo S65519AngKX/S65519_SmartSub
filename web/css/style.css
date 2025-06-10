@@ -1,0 +1,86 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #95e8f5;
+}
+#section{
+    flex-grow: 1;
+    min-height:72vh;
+    margin-bottom:0;
+}
+header,footer {
+    background-color: #1fb1c4;
+    color: white;
+    height: fit-content;
+}
+
+header nav {
+    align-items: center;
+    text-align: center;
+    margin-left:20%;
+}
+footer{
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    bottom:0;
+    margin-top:0;
+}
+#logo{
+    font-family: Stardos Stencil;
+    font-size:40px;
+    font-weight: bolder;
+    text-align: center;
+    color:red;
+}
+#logo1{
+    font-family: Stardos Stencil;
+    color: blue;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 5px 16px;
+    list-style: none;
+    background-color: #eee;
+    margin-bottom: 0;
+    
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 12px;
+}
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
